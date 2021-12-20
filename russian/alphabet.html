@@ -1,0 +1,484 @@
+<!-- 8 branches of learning. vocabulary, spelling, grammar, reading, writing, listening, speaking, learn about russian culture -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="https://cdn.britannica.com/42/3842-004-F47B77BC/Flag-Russia.jpg">
+    
+    <title> Russian Alphabet </title>
+</head>
+<body>
+          <!-- top navigation -->
+          <div id="nav" onclick="openNav()">
+            <div id="gears">
+                <div id="gear1"> <img src="../images/gear1.png"> </div>
+                <div id="gear2"> <img src="../images/gear1.png"> </div>
+                <div id="gear3"> <img src="../images/gear1.png"> </div>
+            </div>
+            <img src="../images/blank.png">
+        </div>
+    
+        <div id="navOptions">
+            <div id="navOptionsA">
+            <p><a href="russian.html" style="margin-top: 10%; color: white;"> HOME </a></p>
+            <p><a href="essentialwords.html" style="color: white;"> ESSENTIALS </a></p>
+        </div>
+        </div>
+    
+    
+        <div id="openedNav" onclick="closeNav()">
+            <div id="gears">
+            </div>
+            <img src="../images/blank.png">
+        </div>
+    
+        <!-- top navigation -->
+        <div id="background">
+
+            <!-- flash card -->
+            <div id="flashCardWrapper">
+                <div id="randomCardAlphabet"><button onclick=" x = Math.floor(Math.random() * 34) + 1; hideAnswer();"> RANDOM CARD </button></div>
+                <div id="flipButtons">
+                <button onclick="revealAnswer()"> SHOW ANSWER </button>
+                <button onclick="hideAnswer()"> HIDE ANSWER </button>
+            </div>
+                <div id="card1">
+                    <div id="card1InnerText">
+                    <h1 id="card1h1" style="font-family: 'Murecho', sans-serif;
+                    font-family: 'Righteous', cursive;"> А а </h1>
+                </div>
+                </div>
+                <div id="nextCard">
+                <button onclick="x++, console.log(x), hideAnswer()"> NEXT CARD </button>
+            </div>
+                  <div id="previousCard">
+                <button onclick="x--, hideAnswer()"> PREVIOUS CARD </button>
+                </div>
+             <div id="resetCards">
+                  <button onclick="window.location.reload();"> RESET CARDS </button>
+                </div>
+            </div>
+  <!-- flash card -->
+
+
+        </div>
+
+        <script>
+
+            const nav = document.getElementById("nav");
+            const navOptions = document.getElementById("navOptions");
+            const openedNav = document.getElementById("openedNav");
+            const card1 = document.getElementById("card1");
+            const gear1 = document.getElementById("gear1")
+            const gear2 = document.getElementById("gear2")
+            const gear3 = document.getElementById("gear3")
+            const answer1 = document.getElementById("answer1");
+            const card1InnerText = document.getElementById("card1InnerText");
+            const card1h12 = document.getElementById("card1h12");
+            const nextCard = document.getElementById("nextCard");
+            const resetCards = document.getElementById("resetCards");
+            resetCards.style.display = "none";
+            var x = 1;
+
+    
+            function openNav() {
+                navOptions.style.marginLeft = "0";
+                navOptions.style.transition = "1s";
+                openedNav.style.visibility = "visible";
+                navOptions.style.visibility = "visible";
+    
+                gear3.style.transform = "rotate(360deg)";
+                gear3.style.transition = "1s";
+    
+                
+                gear2.style.transform = "rotate(-360deg)";
+                gear2.style.transition = "1s";
+              
+    
+                gear1.style.transform = "rotate(360deg)";
+                gear1.style.transition = "1s";
+    
+            }
+    
+            function closeNav() {
+                navOptions.style.marginLeft = "-50vw";
+                nav.style.visibility = "visible";
+                openedNav.style.visibility = "hidden";
+                navOptions.style.transition = "1s";
+          
+                gear3.style.transform = "rotate(-360deg)";
+                gear3.style.transition = "1s";
+    
+                gear2.style.transform = "rotate(360deg)";
+                gear2.style.transition = "1s";
+    
+                gear1.style.transform = "rotate(-360deg)";
+                gear1.style.transition = "1s";
+            
+            }
+
+            function revealAnswer() {
+        
+            card1.style.transform = "rotateX(180deg)";
+            card1.style.transition = "1s";
+
+            if (x == 1) {
+            card1h1.innerHTML = "LETTER NAME: 'AH' " + '<br>' + "LETTER SOUND: 'A'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 2) {
+            card1h1.innerHTML = "LETTER NAME: 'BWEY' " + '<br>' + "LETTER SOUND: 'BW'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 3) {
+            card1h1.innerHTML = "LETTER NAME: 'VWEY' " + '<br>' + "LETTER SOUND: 'V'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 4) {
+            card1h1.innerHTML = "LETTER NAME: 'GEH' " + '<br>' + "LETTER SOUND: 'G'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 5) {
+            card1h1.innerHTML = "LETTER NAME: 'DEH' " + '<br>' + "LETTER SOUND: 'D'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 6) {
+            card1h1.innerHTML = "LETTER NAME: 'YEE-AH' " + '<br>' + "LETTER SOUND: 'YE'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 7) {
+            card1h1.innerHTML = "LETTER NAME: 'YOO' " + '<br>' + "LETTER SOUND: 'YOO'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 8) {
+            card1h1.innerHTML = "LETTER NAME: 'ZHEY' " + '<br>' + "LETTER SOUND: 'ZH'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 9) {
+            card1h1.innerHTML = "LETTER NAME: 'ZE' " + '<br>' + "LETTER SOUND: 'Z'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 10) {
+            card1h1.innerHTML = "LETTER NAME: 'EE' " + '<br>' + "LETTER SOUND: 'EE'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 11) {
+            card1h1.innerHTML = "LETTER NAME: 'EE-KRAT-KAI' " + '<br>' + "LETTER SOUND: 'Y'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 12) {
+            card1h1.innerHTML = "LETTER NAME: 'KA' " + '<br>' + "LETTER SOUND: 'K'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 13) {
+            card1h1.innerHTML = "LETTER NAME: 'EL' " + '<br>' + "LETTER SOUND: 'L'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 14) {
+            card1h1.innerHTML = "LETTER NAME: 'EM' " + '<br>' + "LETTER SOUND: 'M'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 15) {
+            card1h1.innerHTML = "LETTER NAME: 'EN' " + '<br>' + "LETTER SOUND: 'N'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 16) {
+            card1h1.innerHTML = "LETTER NAME: 'OH' " + '<br>' + "LETTER SOUND: 'O'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 17) {
+            card1h1.innerHTML = "LETTER NAME: 'PEH' " + '<br>' + "LETTER SOUND: 'P'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 18) {
+            card1h1.innerHTML = "LETTER NAME: 'AIR (ROLLED R)' " + '<br>' + "LETTER SOUND: 'R (ROLLED R)'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 19) {
+            card1h1.innerHTML = "LETTER NAME: 'ES' " + '<br>' + "LETTER SOUND: 'S'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 20) {
+            card1h1.innerHTML = "LETTER NAME: 'TE' " + '<br>' + "LETTER SOUND: 'T'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 21) {
+            card1h1.innerHTML = "LETTER NAME: 'OO' " + '<br>' + "LETTER SOUND: 'OO'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 22) {
+            card1h1.innerHTML = "LETTER NAME: 'EF' " + '<br>' + "LETTER SOUND: 'F'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 23) {
+            card1h1.innerHTML = "LETTER NAME: 'KHA' " + '<br>' + "LETTER SOUND: 'KH'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 24) {
+            card1h1.innerHTML = "LETTER NAME: 'TS-EE-AH' " + '<br>' + "LETTER SOUND: 'TS'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 25) {
+            card1h1.innerHTML = "LETTER NAME: 'CHEE-AH' " + '<br>' + "LETTER SOUND: 'CH'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 26) {
+            card1h1.innerHTML = "LETTER NAME: 'SHA' " + '<br>' + "LETTER SOUND: 'SH'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 27) {
+            card1h1.innerHTML = "LETTER NAME: 'SHCHA' " + '<br>' + "LETTER SOUND: 'SHCH'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 28) {
+            card1h1.innerHTML = "LETTER NAME: 'TVOIR-DIS-NAK' " + '<br>' + "LETTER SOUND: '(SILENT)'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 29) {
+            card1h1.innerHTML = "LETTER NAME: 'OO-WE " + '<br>' + "LETTER SOUND: 'OO-WE'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 30) {
+            card1h1.innerHTML = "LETTER NAME: 'MYAGI-ZNAK " + '<br>' + "LETTER SOUND: '(SILENT)'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 31) {
+            card1h1.innerHTML = "LETTER NAME: 'EHH " + '<br>' + "LETTER SOUND: 'EHH'";
+            card1h1.style.transform = "rotateX(180deg)";
+            }
+
+            if (x == 32) {
+            card1h1.innerHTML = "LETTER NAME: 'YU " + '<br>' + "LETTER SOUND: 'YU'";
+            card1h1.style.transform = "rotateX(180deg)";
+            nextCard.style.display = "block";
+            resetCards.style.display = "none";
+            }
+
+            if (x == 33) {
+            card1h1.innerHTML = "LETTER NAME: 'YA' " + '<br>' + "LETTER SOUND: 'YA'";
+            card1h1.style.transform = "rotateX(180deg)";
+            nextCard.style.display = "none";
+            resetCards.style.display = "block";
+            }
+            
+            
+        }
+
+            function hideAnswer() {
+            card1.style.transform = "rotateX(0deg)";
+            card1.style.transition = "1s";
+
+
+            if (x >=1 && x <= 32) {
+                resetCards.style.display = "none";
+                nextCard.style.display = "block";
+            }
+
+            if (x == 1) {
+            card1h1.innerHTML = "А а";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 2) {
+            card1h1.innerHTML = "Б б";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 3) {
+            card1h1.innerHTML = "В в";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 4) {
+            card1h1.innerHTML = "Г г";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 5) {
+            card1h1.innerHTML = "Д д";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 6) {
+            card1h1.innerHTML = "Е е";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 7) {
+            card1h1.innerHTML = "Ё ё";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 8) {
+            card1h1.innerHTML = "Ж ж";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 9) {
+            card1h1.innerHTML = "З з";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 10) {
+            card1h1.innerHTML = "И и";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 11) {
+            card1h1.innerHTML = "Й й";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+            
+            if (x == 12) {
+            card1h1.innerHTML = "К к";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 13) {
+            card1h1.innerHTML = "Л л";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 14) {
+            card1h1.innerHTML = "М м";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 15) {
+            card1h1.innerHTML = "Н н";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 16) {
+            card1h1.innerHTML = "О о";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 17) {
+            card1h1.innerHTML = "П п";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 18) {
+            card1h1.innerHTML = "Р р";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 19) {
+            card1h1.innerHTML = "С с";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 20) {
+            card1h1.innerHTML = "Т т";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 21) {
+            card1h1.innerHTML = "У у";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 22) {
+            card1h1.innerHTML = "Ф ф";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 23) {
+            card1h1.innerHTML = "Х х";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 24) {
+            card1h1.innerHTML = "Ц ц";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 25) {
+            card1h1.innerHTML = "Ч ч";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 26) {
+            card1h1.innerHTML = "Ш ш";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 27) {
+            card1h1.innerHTML = "Щ щ";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 28) {
+            card1h1.innerHTML = "Ъ ъ";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 29) {
+            card1h1.innerHTML = "Ы ы";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 30) {
+            card1h1.innerHTML = "Ь ь";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 31) {
+            card1h1.innerHTML = "Э э";
+            card1h1.style.transform = "rotateX(0deg)";
+            }
+
+            if (x == 32) {
+            card1h1.innerHTML = "Ю ю";
+            card1h1.style.transform = "rotateX(0deg)";
+            nextCard.style.display = "block";
+            resetCards.style.display = "none";
+            }
+
+            if (x == 33) {
+            card1h1.innerHTML = "Я я";
+            card1h1.style.transform = "rotateX(0deg)";
+            nextCard.style.display = "none";
+            resetCards.style.display = "block";
+            }
+                
+        }
+
+    
+        </script>
+</body>
+</html>
