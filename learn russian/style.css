@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+/* home page */
+
+
+#bar {
+    width: 100vw;
+    height: 115px;
+    background-color: #0076be;
+    z-index: 8;
+    position: fixed;
+}
+
+#mainBackground {
+    position: absolute;
+    margin-top: 115px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#mainTitle h1 {
+    color: white;
+    font-size: 50px;
+    margin-right: 5vw;
+    text-align: right;
+}
+
+#mainTitle p {
+    color: white;
+    font-size: 20px;
+    margin-right: 5vw;
+    text-align: right;
+}
+
+#startBtn a {
+    text-decoration: none;
+    color: black;
+    padding: 2em;     
+    margin: -2em; 
+}
+
+#startBtn a:hover {
+    color: white;
+}
+
+#startBtn button {
+    position: absolute;
+    margin-top: 2vh;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 10px black;
+    right: 0;
+    margin-right: 5vw;
+}
+
+#startBtn button:hover {
+    margin-top: 3vh;
+    margin-right: 4vw;
+    box-shadow: none;
+    border: 1px solid white;
+    transition: 1s;
+    background-color: black;
+}
+
+
+#russianFlag img {
+    width: 225px;
+    margin-top: 3vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+}
+
+#russianLanguage {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 15vh;
+    position: absolute;
+}
+
+#mainBackgroundLanguageSelect h1 {
+    margin-top: 12vh;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+#russianSelectBtn button {
+    position: absolute;
+    right: 30vw;
+    margin-top: 5vh;
+}
+
+#mainBackgroundLanguageSelect {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url(images/backgroundLanguageSelect.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#scenery img {
+    position: absolute;
+    width: 35vw;
+    z-index: 1;
+}
+
+#mainBackground2 {
+    position: absolute;
+    margin-top: 100vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: #4db4d7;
+}
+
+#siberia {
+    opacity: 0%;
+}
+
+#mainTitle2 h1 {
+    color: white;
+    font-size: 45px;
+    margin-top: 5vh;
+    margin-right: 5vw;
+    text-align: center;
+}
+
+#mainTitle2 p {
+    margin-top: 3vh;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#mainTitle2 img {
+    width: 100px;
+}
+
+#extraBtns button {
+    transition: 1s;
+    position: absolute;
+    margin-top: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 10px black;
+}
+
+#extraBtns button:hover {
+    box-shadow: none;
+    border: 1px solid white;
+    transition: 1s;
+    background-color: black;
+}
+
+#extraBtns a {
+    padding: 5em;     
+    margin: -5em; 
+}
+
+#extraBtns a:hover {
+    color: white;
+}
+
+#logo img {
+    position: fixed;
+    width: 90px;
+    margin-top: 0.5vh;
+    right: 2vw;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1198px){
+    #mainTitle h1 {
+        font-size: 40px;
+    }
+
+    #scenery {
+        margin-top: 11vh;
+    }
+}
+
+@media screen and (max-width: 941px) {
+    #scenery {
+        margin-top: 23vh;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    #scenery {
+        margin-top: 31vh;
+    }
+
+    #mainTitle {
+        margin-top: -10vh;
+    }
+}
+
+@media screen and (min-width: 1198px) {
+    #scenery {
+       margin-top: 9vh;
+    }
+
+    #scenery img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1225px) {
+    #scenery {
+        margin-top: 3vh;
+     }
+}
+
+@media screen and (min-width: 1439px) {
+    #scenery img {
+       width: 450px;
+     }
+
+     #mainTitle h1 {
+         font-size: 55px;
+     }
+
+     #mainTitle p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 685px){
+    #scenery {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 891px) {
+    #mainTitle2 h1, #mainTitle h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    #scenery {
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (min-width: 1009px) {
+    #scenery {
+        margin-top: 1vh;
+    }
+}
+
+/* home page */
+
+#background {
+    background-color: #4db4d7;
+    background-size: cover;
+    height: 100vh;
+}
+
+#nav {
+    position: fixed;
+    z-index: 100;
+}
+
+#nav img {
+    width: 100px;
+}
+
+#navOptions {
+    width: 50vw;
+    background-color: rgb(14, 14, 14);
+    height: 100vh;
+    position: absolute;
+    margin-top: 0;
+    margin-left: -50vw;
+    z-index: 40;
+    position: fixed;
+}
+
+#openedNav {
+    visibility: hidden;
+    position: fixed;
+    z-index: 10000;
+}
+
+#openedNav img {
+    width: 100px;
+}
+
+#navOptionsA {
+    margin-top: 15vh;
+}
+
+#navOptionsA p {
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+
+#randomCard button {
+    position: absolute;
+    width: 60vw;
+}
+
+#randomCard {
+    margin-top: -25vh;
+}
+
+/* essentials */
+
+#flashCardWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#essentialCard {
+    width: 60vw;
+    height: 40vh;
+    margin-top: 30vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#flashCardInnerText {
+    width: 50vw;
+    height: 40vh;
+}
+
+#flashCardInnerText  {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -0%);
+    text-align: center;
+    font-size: 40px;
+}
+
+#flashCardImg img {
+    width: 15vw;
+    height: 20vh;
+    position: absolute;
+    margin-top: 10vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#essentialNextBtn button {
+    width: 60vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+#essentialPreviousBtn button {
+    position: absolute;
+    width: 60vw;
+}
+
+#flipButtonsEssentials button {
+    width: 30vw;
+}
+
+#flipBtn1 button {
+    position: absolute;
+    margin-top: -10vh;
+}
+
+#flipBtn2 button {
+    position: absolute;
+    left: 50%;
+    margin-top: -10vh;
+}
+
+#essentialResetBtn button {
+    width: 60vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+/* essentials */
+
+#gears {
+    position: fixed;
+}
+
+#gear1 {
+    margin-left: -22.5px;
+    margin-top: 1vh;
+    position: absolute;
+    transform-origin: 50% 55%;
+}
+
+#gear2 {
+    position: absolute;
+    transform-origin: 50% 40%;
+    transform-box: fill-box;
+}
+
+#gear2 img {
+    margin-left: 0.5vw;
+    margin-top: -20px;
+    width: 80px;
+}
+
+#gear3 img {
+    width: 70px;
+    margin-top: 2vh;
+    margin-left: 35px;
+}
+
+#gear3 {
+    transform-origin: 65% 60%;
+}
+
+.gearSpin {
+    animation: gearSpin 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.gearSpin2 {
+    animation: gearSpin2 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gearSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gearSpin2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+#rightHalf {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+}
+
+#title {
+    left: 45%;
+    transform: translate(-50%, 0%);
+    margin-right: 100px;
+    font-size: 30px;
+    position: absolute;
+    z-index: 8;
+}
+
+#title h1 {
+    margin-top: 2vh;
+    color: white;
+}
+
+#title img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: -80px;
+    left: 115%;
+    transform: translate(-50%, 0%);
+    filter: invert(100%);
+}
+
+#alphabet img {
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 35vh;
+}
+
+#alphabet h1 {
+    /* color: #104a8e; */
+    color: white;
+    margin-top: 14vh;
+    position: absolute;
+    margin-left: 10vw;
+}
+
+#alphabetMainBtn {
+    position: absolute;
+    z-index: 10;
+    top: 19.5vh;
+    left: 10vw;
+}
+
+#learnAlphabetBtn button {
+    margin-top: 20vh;
+    margin-left: 10vw;
+    z-index: 10;
+}
+
+#alphabetListBtn {
+    position: absolute;
+}
+
+#alphabetListBtn button {
+    margin-top: 0vh;
+    margin-left: 10vw;
+}
+
+#essentials h1 {
+    color: white;
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+#essentials button {
+    margin-top: 17vh;
+    margin-left: 10vw;
+}
+
+#card1InnerText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card1 {
+    width: 60vw;
+    height: 40vh;
+    margin-top: 30vh;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 34;
+    
+}
+
+#card1InnerText h1 {
+    margin-top: 17.5vh;
+}
+
+
+#flipButtons {
+    margin-top: -15vh;
+    position: absolute;
+}
+
+#flipButtons button {
+    width: 30vw;
+}
+
+#nextCard button {
+    position: absolute;
+    margin-top: 35.5vh;
+    width: 60vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#resetCards button {
+    position: absolute;
+    margin-top: 35.5vh;
+    width: 60vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#previousCard button {
+    position: absolute;
+    margin-top: 38vh;
+    width: 60vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#randomCardAlphabet {
+    margin-top: -25vh;
+    margin-bottom: -3vh;
+}
+
+#randomCardAlphabet button {
+    position: absolute;
+    width: 60vw;
+}
+
+/* essential phrases */
+
+#essentialPhraseCard {
+    width: 60vw;
+    height: 40vh;
+    background-color: white;
+    margin-top: 30vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#showAnswer {
+    margin-top: 26.5vh;
+    position: absolute;
+    left: 20vw;
+}
+
+#showAnswer button {
+    width: 30vw;
+}
+
+#hideAnswer {
+    margin-top: 26.5vh;
+    position: absolute;
+    left: 50vw;
+}
+
+#hideAnswer button {
+    width: 30vw;
+}
+
+#nextCardEssentialPhrases button {
+    width: 60vw;
+}
+
+#nextCardEssentialPhrases {
+    position: absolute;
+    margin-top: 70.5vh;
+    left: 20vw;
+}
+
+#previousCardEssentialPhrases button {
+    width: 60vw;
+}
+
+#previousCardEssentialPhrases {
+    position: absolute;
+    margin-top: 73vh;
+    left: 20vw;
+}
+
+#resetCardEssentialPhrases {
+    position: absolute;
+    margin-top: 70.5vh;
+    left: 20vw;
+}
+
+#resetCardEssentialPhrases button {
+    width: 60vw;
+}
+
+#randomCardEssentialPhrases {
+    margin-top: 24vh;
+    position: absolute;
+    left: 20vw;
+}
+
+#randomCardEssentialPhrases button {
+    width: 60vw;
+}
+
+/* word list alphabet */
+
+#alphabetList {
+    color: white;
+    margin-top: 15vh;
+    position: absolute;
+    margin-left: 2vw;
+}
+
+
+
+
+

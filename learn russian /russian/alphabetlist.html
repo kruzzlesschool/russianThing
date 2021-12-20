@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="https://cdn.britannica.com/42/3842-004-F47B77BC/Flag-Russia.jpg">
+    <title> Alphabet Word List </title>
+</head>
+<body>
+     <!-- top navigation -->
+     <div id="nav" onclick="openNav()">
+        <div id="gears">
+            <div id="gear1"> <img src="../images/gear1.png"> </div>
+            <div id="gear2"> <img src="../images/gear1.png"> </div>
+            <div id="gear3"> <img src="../images/gear1.png"> </div>
+        </div>
+        <img src="../images/blank.png">
+    </div>
+
+    <div id="navOptions">
+        <div id="navOptionsA">
+        <p><a href="russian.html" style="margin-top: 10%; color: white;"> HOME </a></p>
+        <p><a href="essentials.html" style="color: white;"> ESSENTIALS </a></p>
+    </div>
+    </div>
+
+    <div id="openedNav" onclick="closeNav()">
+        <div id="gears">
+        </div>
+        <img src="../images/blank.png">
+    </div>
+
+    <!-- top navigation -->
+
+
+    <div id="background">
+        <div id="alphabetList">
+            А а
+            <br>
+            Б б
+            <br>
+            В в
+            <br>
+            Г г
+            <br>
+            Д д
+            <br>
+            Е е
+            <br>
+            Ё ё
+            <br>
+            Ж ж
+            <br>
+            З з
+            <br>
+            И и
+            <br>
+            Й й
+            <br>
+            К к
+            <br>
+            Л л
+            <br>
+            М м
+            <br>
+            Н н
+            <br>
+            О о
+            <br>
+            П п
+            <br>
+            Р р
+            <br>
+            С с
+            <br>
+            Т т
+            <br>
+            У у
+            <br>
+            Ф ф
+            <br>
+            Х х
+            <br>
+            Ц ц
+            <br>
+            Ч ч
+            <br>
+            Ш ш
+            <br>
+            Щ щ
+            <br>
+            Ъ ъ
+            <br>
+            Ы ы
+            <br>
+            Ь ь
+            <br>
+            Э э
+            <br>
+            Ю ю
+            <br>
+            Я я
+        </div>
+    </div>
+
+    <script>
+
+        const nav = document.getElementById("nav");
+        const navOptions = document.getElementById("navOptions");
+        const openedNav = document.getElementById("openedNav"); 
+        const flashCard = document.getElementById("flashCard");
+        const gear1 = document.getElementById("gear1")
+        const gear2 = document.getElementById("gear2")
+        const gear3 = document.getElementById("gear3")
+
+        function openNav() {
+            navOptions.style.marginLeft = "0";
+            navOptions.style.transition = "1s";
+            openedNav.style.visibility = "visible";
+            navOptions.style.visibility = "visible";
+
+            gear3.style.transform = "rotate(360deg)";
+            gear3.style.transition = "1s";
+
+            
+            gear2.style.transform = "rotate(-360deg)";
+            gear2.style.transition = "1s"; 
+          
+
+            gear1.style.transform = "rotate(360deg)";
+            gear1.style.transition = "1s";
+
+        }
+
+        function closeNav() {
+            navOptions.style.marginLeft = "-50vw";
+            nav.style.visibility = "visible";
+            openedNav.style.visibility = "hidden";
+            navOptions.style.transition = "1s";
+      
+            gear3.style.transform = "rotate(-360deg)";
+            gear3.style.transition = "1s";
+
+            gear2.style.transform = "rotate(360deg)";
+            gear2.style.transition = "1s";
+
+            gear1.style.transform = "rotate(-360deg)";
+            gear1.style.transition = "1s";
+        
+        }
+
+    </script>
+</body>
+</html>
